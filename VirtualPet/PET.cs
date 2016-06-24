@@ -14,39 +14,19 @@ namespace VirtualPet
         public int Play { get; set; }
         public int Sleep { get; set; }
 
-        public void MainMenu()
+        public static void FEED()
         {
-            while (true)
-            {
-                Console.WriteLine();
-                Console.WriteLine("1. FEED YOUR PET BRO");
-                Console.WriteLine("2. WATER YOUR PET");
-                Console.WriteLine("3. PLAY YOUR PET");
-                Console.WriteLine("4. EXIT YOUR PET");
-
-                int choice = Convert.ToInt32(Console.ReadLine());
-                if (choice == 1)
-                {
-
-                }
-                else if (choice == 2)
-                {
-
-                }
-                else if (choice == 3)
-                {
-
-                }
-                else if (choice == 4)
-                {
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("NOT A VALID NUMBER TRY AGAIN");
-                }
-            }
+            
         }
-        
+
+        internal static void DRINK()
+        {
+            
+        }
+
+        internal static void SLEEP()
+        {
+            
+        }
     }
 }
