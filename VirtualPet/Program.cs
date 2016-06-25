@@ -11,6 +11,7 @@ namespace VirtualPet
     {
         static void Main(string[] args)
         {
+            PET Dog = new PET();
 
             Console.WriteLine("WELCOME TO CREATE A PET");
 

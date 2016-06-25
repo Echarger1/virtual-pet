@@ -8,23 +8,85 @@ namespace VirtualPet
 {
     class PET
     {
-        public string PetName { get; set; }
-        public int Hunger { get; set; }
-        public int Thirst { get; set; }
-        public int Play { get; set; }
-        public int Sleep { get; set; }
+
+        private string petname; private int hunger; private int thirst;
+        private int play; private int sleep;
+
+        public string PetName {
+            get
+            {
+                return petname;
+            }
+            set
+            {
+                petname = value;
+            }
+        }
+        public int Hunger
+        {
+            get
+            {
+                return hunger;
+            }
+            set
+            {
+                hunger = value;
+            }
+        }
+        public int Thirst
+        {
+            get
+            {
+                return thirst;
+            }
+            set
+            {
+                thirst = value;
+            }
+        }
+        public int Play
+        {
+            get
+            {
+                return play;
+            }
+            set
+            {
+                play = value;
+            }
+        }
+        public int Sleep
+        {
+            get
+            {
+                return play;
+            }
+            set
+            {
+                sleep = value;
+            }
+        }
+
+
+        public PET()
+        {
+
+
+        }
+
+
 
         public static void FEED()
         {
             
         }
 
-        internal static void DRINK()
+        public static void DRINK()
         {
             
         }
 
-        internal static void SLEEP()
+        public static void SLEEP()
         {
             
         }
