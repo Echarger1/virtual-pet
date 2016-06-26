@@ -10,7 +10,9 @@ namespace VirtualPet
     {
 
         private string petname; private int hunger; private int thirst;
-        private int play; private int sleep;
+        private int sleep;
+
+        int NewFoodAmnt; int NewDrinkAmnt; int NewTiredAmnt;
 
         public string PetName {
             get
@@ -44,22 +46,11 @@ namespace VirtualPet
                 thirst = value;
             }
         }
-        public int Play
-        {
-            get
-            {
-                return play;
-            }
-            set
-            {
-                play = value;
-            }
-        }
         public int Sleep
         {
             get
             {
-                return play;
+                return sleep;
             }
             set
             {
@@ -67,28 +58,36 @@ namespace VirtualPet
             }
         }
 
-
         public PET()
         {
 
-
         }
 
-
-
-        public static void FEED()
+        public PET(int HungerAmnt, int DrinkAmnt, int TiredAmnt)
         {
-            
+            hunger = HungerAmnt; thirst = DrinkAmnt; sleep = TiredAmnt;
         }
 
-        public static void DRINK()
+        public void TICK()
         {
-            
+            hunger += NewFoodAmnt;
+            thirst += NewDrinkAmnt;
+            sleep += NewTiredAmnt;
         }
 
-        public static void SLEEP()
+        public void FEED(int Food)
         {
-            
+            NewFoodAmnt = Food;
+        }
+
+        public void DRINK(int Water)
+        {
+            NewDrinkAmnt = Water;
+        }
+
+        public void SLEEP(int Tired)
+        {
+            NewTiredAmnt = Tired;
         }
     }
 }

@@ -12,7 +12,7 @@ namespace VirtualPet
         static void Main(string[] args)
         {
             PET Dog = new PET();
-
+            int UserFood; int UserDrink; int UserSleep;
             Console.WriteLine("WELCOME TO CREATE A PET");
 
             {
@@ -27,15 +27,21 @@ namespace VirtualPet
                     int choice = Convert.ToInt32(Console.ReadLine());
                     if (choice == 1)
                     {
-                        PET.FEED();
+                        UserFood = Convert.ToInt32(Console.ReadLine());
+                        Dog.FEED(UserFood);
+                        Dog.TICK();
                     }
                     else if (choice == 2)
                     {
-                        PET.DRINK();
+                        UserDrink = Convert.ToInt32(Console.ReadLine());
+                        Dog.DRINK(UserDrink);
+                        Dog.TICK();
                     }
                     else if (choice == 3)
                     {
-                        PET.SLEEP();
+                        UserSleep = Convert.ToInt32(Console.ReadLine());
+                        Dog.SLEEP(UserSleep);
+                        Dog.TICK();
                     }
                     else if (choice == 4)
                     {
