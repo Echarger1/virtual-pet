@@ -75,22 +75,27 @@ namespace VirtualPet
             sleep += NewTiredAmnt;
         }
 
+        public void STATUS()
+        {
+            Console.WriteLine("{0}'s Status: {1} {2} {3}", PetName, hunger, thirst, sleep);
+        }
+
         public void FEED(int Food)
         {
             NewFoodAmnt = Food;
-            Console.WriteLine(PetName, "Has eaten");
+
         }
 
         public void DRINK(int Water)
         {
             NewDrinkAmnt = Water;
-            Console.WriteLine(PetName, "Drank water");
+            
         }
 
         public void SLEEP(int Tired)
         {
             NewTiredAmnt = Tired;
-            Console.WriteLine(PetName, "has slept");
+            
         }
     }
 }
