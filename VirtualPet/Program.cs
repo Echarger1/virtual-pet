@@ -12,16 +12,25 @@ namespace VirtualPet
         static void Main(string[] args)
         {
             PET Dog = new PET();
+
             int UserFood; int UserDrink; int UserSleep;
+
             Console.WriteLine("WELCOME TO CREATE A PET");
 
             {
 
                 Console.WriteLine("ENTER PET NAME:");
+
                 string PetName = Console.ReadLine();
 
                 while (true)
                 {
+                    Console.WriteLine("────────────────");
+                    Console.WriteLine("╔══╗───╔═╗──────");
+                    Console.WriteLine("║║║╠╦╗─║╚╠═╦═╦═╗");
+                    Console.WriteLine("║║║║╔╬╗║╔║╩╣╬║║║");
+                    Console.WriteLine("╚╩╩╩╝╚╝╚═╩═╩╩╩╩╝");
+
                     Console.WriteLine("________________1¶¶¶¶¶¶¶¶¶¶¶1________________");
                     Console.WriteLine("_____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1____________");
                     Console.WriteLine("__________¶¶¶¶118¶¶8¶¶¶¶¶¶¶¶¶¶¶¶¶¶___________");
@@ -63,8 +72,11 @@ namespace VirtualPet
                     Console.WriteLine("¶¶8_______¶¶¶¶¶_____11118881__1¶¶¶¶¶¶¶¶¶¶¶___");
                     Console.WriteLine("¶1_______¶¶¶¶¶¶______________¶¶¶¶¶¶¶¶¶8¶¶¶8__");
                     Console.WriteLine("¶_______¶¶¶¶¶¶¶____________1¶¶¶¶¶¶¶8¶¶¶88¶¶8_");
-
-
+                    Console.WriteLine("_______1¶¶¶¶8_____________¶¶¶¶¶8¶¶¶888888¶¶¶8");
+                    Console.WriteLine("_______¶¶¶¶_____________1¶¶¶¶¶88¶¶¶¶¶88¶¶¶88¶");
+                    Console.WriteLine("______¶¶¶¶¶____________¶¶¶¶8888¶8¶88881¶8¶888");
+                    Console.WriteLine("_____¶¶¶¶¶8__________8¶¶88¶18818¶88118¶88888¶");
+                    
 
                     Console.WriteLine();
                     Console.WriteLine("TYPE OPTION TWICE");
