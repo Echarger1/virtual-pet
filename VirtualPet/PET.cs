@@ -84,6 +84,7 @@ namespace VirtualPet
         {
             NewFoodAmnt = Food;
 
+
         }
 
         public void DRINK(int Water)

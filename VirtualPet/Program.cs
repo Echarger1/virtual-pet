@@ -25,12 +25,11 @@ namespace VirtualPet
 
                 while (true)
                 {
-                    Console.WriteLine("────────────────");
+                    
                     Console.WriteLine("╔══╗───╔═╗──────");
                     Console.WriteLine("║║║╠╦╗─║╚╠═╦═╦═╗");
                     Console.WriteLine("║║║║╔╬╗║╔║╩╣╬║║║");
                     Console.WriteLine("╚╩╩╩╝╚╝╚═╩═╩╩╩╩╝");
-
                     Console.WriteLine("________________1¶¶¶¶¶¶¶¶¶¶¶1________________");
                     Console.WriteLine("_____________¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1____________");
                     Console.WriteLine("__________¶¶¶¶118¶¶8¶¶¶¶¶¶¶¶¶¶¶¶¶¶___________");
@@ -88,7 +87,7 @@ namespace VirtualPet
                     int choice = Convert.ToInt32(Console.ReadLine());
                     if (choice == 1)
                     {
-                        UserFood = Convert.ToInt32(Console.ReadLine());
+                        UserFood = choice;
                         Dog.FEED(UserFood);
                         Dog.TICK();
                         Dog.STATUS();
@@ -96,7 +95,7 @@ namespace VirtualPet
                     }
                     else if (choice == 2)
                     {
-                        UserDrink = Convert.ToInt32(Console.ReadLine());
+                        UserDrink = choice;
                         Dog.DRINK(UserDrink);
                         Dog.TICK();
                         Dog.STATUS();
@@ -104,7 +103,7 @@ namespace VirtualPet
                     }
                     else if (choice == 3)
                     {
-                        UserSleep = Convert.ToInt32(Console.ReadLine());
+                        UserSleep = choice;
                         Dog.SLEEP(UserSleep);
                         Dog.TICK();
                         Dog.STATUS();
