@@ -16,6 +16,7 @@ namespace VirtualPet
             Console.WriteLine("WELCOME TO CREATE A PET");
 
             {
+
                 Console.WriteLine("ENTER PET NAME:");
                 string PetName = Console.ReadLine();
 
