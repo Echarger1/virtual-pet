@@ -53,12 +53,10 @@ namespace VirtualPet
                     }
                 }
 
-
-            }
-        
-        
-        }
-
-      
+            }  
+                       
+        }  
+           
     }
+
 }
