@@ -13,10 +13,10 @@ namespace VirtualPet
         {
             PET Dog = new PET();
 
-            int UserFood; int UserDrink; int UserSleep;
+           
 
             Console.WriteLine("WELCOME TO CREATE A PET");
-
+            while(true)
             {
 
                 Console.WriteLine("ENTER PET NAME:");
@@ -78,16 +78,16 @@ namespace VirtualPet
                     
 
                     Console.WriteLine();
-                    Console.WriteLine("TYPE OPTION TWICE");
                     Console.WriteLine("1. FEED YOUR PET");
                     Console.WriteLine("2. WATER YOUR PET");
                     Console.WriteLine("3. SLEEP YOUR PET");
                     Console.WriteLine("4. EXIT YOUR PET");
-
+                    int UserFood; int UserDrink; int UserSleep;
                     int choice = Convert.ToInt32(Console.ReadLine());
                     if (choice == 1)
                     {
-                        UserFood = choice;
+                        Console.WriteLine("AMOUNT TO GIVE {0}", PetName);
+                        UserFood = Convert.ToInt32(Console.ReadLine());
                         Dog.FEED(UserFood);
                         Dog.TICK();
                         Dog.STATUS();
@@ -95,7 +95,8 @@ namespace VirtualPet
                     }
                     else if (choice == 2)
                     {
-                        UserDrink = choice;
+                        Console.WriteLine("AMOUNT TO GIVE {0}", PetName);
+                        UserDrink = Convert.ToInt32(Console.ReadLine());
                         Dog.DRINK(UserDrink);
                         Dog.TICK();
                         Dog.STATUS();
@@ -103,7 +104,8 @@ namespace VirtualPet
                     }
                     else if (choice == 3)
                     {
-                        UserSleep = choice;
+                        Console.WriteLine("AMOUNT TO GIVE {0}", PetName);
+                        UserSleep = Convert.ToInt32(Console.ReadLine());
                         Dog.SLEEP(UserSleep);
                         Dog.TICK();
                         Dog.STATUS();
