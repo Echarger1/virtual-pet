@@ -77,7 +77,7 @@ namespace VirtualPet
 
         public void STATUS()
         {
-            Console.WriteLine("Status: Food ={1} Water ={2} Sleep ={3}", PetName, hunger, thirst, sleep);
+            Console.WriteLine(" {0} Status: Food ={1} Water ={2} Sleep ={3}", PetName, hunger, thirst, sleep);
         }
 
         public void FEED(int Food)
